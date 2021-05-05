@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+    plugins {
+        id "com.android.application" version "4.2.0"
+        id "com.android.library" version "4.2.0"
+        id "com.autonomousapps.dependency-analysis" version "0.72.1-SNAPSHOT"
+        id "org.jetbrains.kotlin.android" version "1.4.32"
+        id "org.jetbrains.kotlin.kapt" version "1.4.32"
+    }
+}
+
+include ":app"
+include ":lib1"
+include ":lib2"
